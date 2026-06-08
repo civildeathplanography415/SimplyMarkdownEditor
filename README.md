@@ -1,3 +1,5 @@
+<img src="smde_icon.png" alt="Simply Markdown Editor Icon">
+
 # Simply Markdown Editor v1.0
 
 A lightweight, privacy-first, local Markdown editor built as a single HTML file. It uses modern browser APIs to act like a native desktop application, allowing you to edit local files directly on your hard drive without ever uploading your data to a server.
@@ -11,6 +13,13 @@ A lightweight, privacy-first, local Markdown editor built as a single HTML file.
 * **Save Protection:** Tracks your file states and warns you if you try to switch documents without saving your changes.
 * **Export to HTML:** Instantly compile your Markdown document into a standalone, beautifully styled HTML file.
 * **System-Aware Theming:** Fully supports Light and Dark modes, automatically syncing with your operating system's default preference on boot.
+
+## Screenshot
+
+<p align=-"center">
+  <img src="screenshot/smde_2.png" width="360" alt="Simply Markdown Editor screenshot Dark mode" align="left"> 
+  <img src="screenshot/smde_1.png" width="360" alt="Simply Markdown Editor screenshot Light mode">
+</p>
 
 ## How to Run
 
