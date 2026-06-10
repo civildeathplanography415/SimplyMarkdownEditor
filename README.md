@@ -31,6 +31,7 @@ Then double-click the `index.html` file to open it in your browser (Chrome, Edge
 
 * *Note: Because local files don't have a web domain, your browser cannot "remember" your workspace permissions after you close the tab. You will just need to re-select your Workspace folder each time you launch the app.*
 
+
 ### Method 2: The Server Way (For persistent permissions)
 If you want the browser to remember your workspace folder between sessions so you don't have to re-open it every time, you can serve the file over a local server (`http://localhost`):
 * **VS Code:** Right-click the file and select "Open with Live Server".
